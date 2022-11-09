@@ -25,7 +25,7 @@
               <a class="nav-link" href="/write">write</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">hello</a>
+              <a class="nav-link" href="/list">list</a>
             </li>
           </ul>
         </div>
@@ -34,15 +34,26 @@
       <div class="jumbotron">
         <h1 class="display-4">write!</h1>
       </div>
-
-      <div class="input-group">
-        <div class="input-group-prepend" style="float: right;">
-          <span class="input-group-text">With textarea</span>
-        </div>
-        <textarea class="form-control" aria-label="With textarea"></textarea>
-        <button type="button" class="btn btn-light">update!</button>
+      <div>
+        <form action="/add" method="POST">
+          <div class="input-group" style="padding: 10px 20px 10px 20px;">
+            <div class="input-group-prepend" style="float: right;">
+              <span class="input-group-text">할일</span>
+            </div>
+            <textarea class="form-control" aria-label="With textarea" name="title"></textarea>
+          </div>
+          <div class="input-group" style="padding: 10px 20px 10px 20px;">
+            <div class="input-group-prepend" style="float: right;">
+              <span class="input-group-text">Due date</span>
+            </div>
+            <textarea class="form-control" aria-label="With textarea" name="date"></textarea>
+          </div>
+          <button type="submit" class="btn btn-danger" style="margin: 10px 20px 10px 20px;">Submit</button>
+        </form>
       </div>
-    <!-- Optional JavaScript; choose one of the two! -->
+      
+      
+      <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
